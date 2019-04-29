@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DonoutMoney</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+<meta charset="utf-8">
+<!-- SET VIEWPORT - instructs the page to match the screens width in device independent pixels.
+
+Allows the page to reflow content to match the screen sizes.
+
+initial-scale = 1 → instructs browser to establish a 1:1 relationship between CSS pixels and independent pixels.-->
+<meta name="viewport" content="with=device-width, initial-scale=1">
+</head>
+<body>
+
+	
+      <div class="intro">
+         <div class="flex-container">
+      <div class="header1">
+          <a href="{{ url_for('donate')}}">DonutMoney</a>
+      </div>
+      <div class="navbar2">
+         <nav>
+            <ul class="nav-links">
+               <li><a href="{{ url_for('hey')}}">Login</a></li>
+               <li><a href="{{ url_for('animal')}}">Animal Welfare</a></li>
+               <li><a href="{{ url_for('globall')}}">Global Development & Health</a></li>
+               <li><a href="{{ url_for('climate')}}">Climate Change</a></li>
+               <li><a href="{{ url_for('future')}}">Long Term Future</a></li>
+            </ul>
+         </nav>
+   </div>
+      </div>
+
+
+      <div class="container">
+      
+  
+         {% block content %}
+         {% endblock content %}
+      </div>
+
+   
+
+
+</body>
+</html>

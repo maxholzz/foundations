@@ -1,0 +1,49 @@
+{%extends "index.html" %}
+{% block content %}
+<head>
+   <div class="pictures">
+   	<img src="{{ url_for('static', filename='img/earth.jpg')}}"style="max-height: 600px;">
+   </div>
+</head>
+	<div class="text">There's strong evidence that even small donations here can have a huge impact on improving peoples's lives and preventing premature deaths. Estimations suggest that about 16,000 children under the age of 5 die each day from preventable causes associated with extreme poverty.
+	</div>
+	<div class="big-container">
+		<div class="subheader">Scale 14/16</div>
+		<div class="text">The damage done by easily preventable diseases in the least developed countries plus India is between 200 million and 500 million. </div>
+	</div>
+
+	<div class="big-container">
+		<div class="subheader">Neglectdness 2/12</div>
+		<div class="text">
+   While many organisations work on helping those in extreme poverty, the scale of the problem is huge, therefore there are many opportunitys with room for more funding.</div>
+	</div>	
+
+	<div class="big-container">
+		<div class="subheader">Solvability 7/8</div>
+		<div class="text">Even small donations in Medicine or even Water can have a huge impact on the live of those in extreme poverty.</div>
+	</div>
+	<div class="big-container">
+		<div class="subheader">Selected Organisations</div>
+		<ul class="nav-links">
+               <li><a href="#">Against Malaria Fundation</a></li>
+               <li><a href="#">Dream the World Initiative</a></li>
+               <li><a href="#">Give Directly</a></li>
+               <li><a href="#">...</a></li>
+            </ul>
+	</div>
+
+{% endblock content%}
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>paypal.Buttons().render('body');</script>
+
+
+
+
+
+
+
+
+
+</body>
